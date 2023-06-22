@@ -3,10 +3,9 @@ import PageInfo from "../types/pageInfo.types";
 import Character from "../types/character.types";
 
 /**
- * Function that returns all the charecters per page and filtered by name if this is required.
  *
  * @param {string | undefined} name
- * @returns {Promise<[Character[], PageInfo, number] | [any, any, number]>} returns characters and info
+ * @returns {Promise<[Character[], PageInfo, number] | [any, any, number]>} Characters and info
  */
 export const getCharactersAPI = async (
   name?: string
@@ -25,10 +24,9 @@ export const getCharactersAPI = async (
 };
 
 /**
- *  Function that returns characters per page.
  *
  * @param {string }url
- * @returns {Promise<[Character[], PageInfo]>} returns characters and info
+ * @returns {Promise<[Character[], PageInfo]>} Characters and Info
  */
 export const changePage = async (
   url: string
@@ -39,10 +37,9 @@ export const changePage = async (
 };
 
 /**
- * Function that returns all the episodes of a character.
  *
  * @param {Array<number>} arrayEpisodeID
- * @returns {Promise<Episode | Episode[]>} returns all episodes of one character
+ * @returns {Promise<Episode | Episode[]>} All episodes of one character
  */
 export const fetchEpisodes = async (
   arrayEpisodeID: (string | undefined)[]

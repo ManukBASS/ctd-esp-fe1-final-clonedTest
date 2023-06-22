@@ -14,7 +14,6 @@ import Episode from "../types/episode.types";
 import { getEpisodesThunk } from "../actions/episodes.actions";
 
 /**
- * Character details page
  *
  * @returns {React.ReactElement} JSX element
  */
@@ -32,9 +31,6 @@ const DetailPage: FC = () => {
   );
 
   useEffect(() => {
-    /**
-     *  Array of episodes IDs
-     */
     const array: (string | undefined)[] = character.episode.map((episode) => {
       return episode.split("/").at(-1);
     });
